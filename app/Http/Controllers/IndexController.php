@@ -9,7 +9,7 @@ class IndexController extends Controller
 {
     public function index(){
         $thiago = new Institution;
-        $thiago->name = 'Universidade of Sao Paulo';
+        $thiago->name = 'Fujian University of Technology';
         $thiago->save();
 
         #$alec = '';
