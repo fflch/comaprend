@@ -16,7 +16,10 @@ class CreateInstitutionsTable extends Migration
         Schema::create('institutions', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            # CREATE THE FIELDS
             $table->string('name');
+            $table->string('initials');
+            $table->string('country');
         });
     }
 

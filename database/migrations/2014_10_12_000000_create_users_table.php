@@ -18,9 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            # You should add: username, birthday, gender, nationality, native_language
+            # Do the samething we did with institutions: create, edit, index and delete
         });
     }
 
